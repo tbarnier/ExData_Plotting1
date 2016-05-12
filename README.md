@@ -1,4 +1,27 @@
+# Please find below the result of my assigment
+
+Here are the 4 promised plots
+
+## PLOT1
+
+<img src="plot1.png" />
+
+## PLOT2
+
+<img src="plot2.png" />
+
+## PLOT3
+
+<img src="plot3.png" />
+
+## PLOT4
+
+<img src="plot4.png" />
+
+# Original assesment from coursera!
+
 ## Introduction
+
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine

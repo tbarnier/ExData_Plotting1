@@ -10,6 +10,14 @@ library(lubridate)
 # Read the CSV file and returns a clean dataframe
 loadData<- function()
 {
+  # If the datafile is not already there, download and unzip it!
+  if(!file.exists('household_power_consumption.txt')){
+    if(!file.exists('exdata_data_household_power_consumption.zip')){
+      download.file('https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip',
+                    destfile = 'exdata_data_household_power_consumption.zip')
+      unzip('exdata_data_household_power_consumption.zip')
+    }
+  }
   ## Big trick: Piping grep UNIX command to fasten the CSV READ
   d<-read.csv(pipe('grep "^[12]/2/2007\\|^Date" household_power_consumption.txt'),stringsAsFactors = F, sep=';', na.strings = '?')
   

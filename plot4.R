@@ -70,6 +70,6 @@ plot42Png<-function(data, filename)
 }
 
 ### AUTO EXECUTION
-plot42Png(loadData(),'plot3')
+#plot42Png(loadData(),'plot4')
 
-loadData()
+
